@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlLibrary", "Cus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCustomControl", "TestCustomControl\TestCustomControl.csproj", "{E7B99FA0-B9D7-4303-A82D-6EC350914618}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlLibrary v.4", "CustomControlLibrary v.4\CustomControlLibrary v.4.csproj", "{44964A76-6E2A-4C12-B37F-388CB8345EAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E7B99FA0-B9D7-4303-A82D-6EC350914618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7B99FA0-B9D7-4303-A82D-6EC350914618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7B99FA0-B9D7-4303-A82D-6EC350914618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44964A76-6E2A-4C12-B37F-388CB8345EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44964A76-6E2A-4C12-B37F-388CB8345EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44964A76-6E2A-4C12-B37F-388CB8345EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44964A76-6E2A-4C12-B37F-388CB8345EAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
