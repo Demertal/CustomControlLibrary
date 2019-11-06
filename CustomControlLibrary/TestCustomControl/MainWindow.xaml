@@ -4,26 +4,47 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestCustomControl"
+        xmlns:customControlLibrary="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <RadioButton Grid.Row="0" Grid.Column="0" GroupName="Test" Content="Тест"/>
-            <RadioButton Grid.Row="1" Grid.Column="0" GroupName="Test" Content="Тест"/>
-            <RadioButton Grid.Row="0" Grid.Column="1" GroupName="Test1" Content="Тест" IsEnabled="False"/>
-            <RadioButton Grid.Row="1" Grid.Column="1" GroupName="Test1" Content="Тест" IsEnabled="False" IsChecked="True"/>
-        </Grid>
+        <TabControl>
+            <TabItem Header="RadioButton">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Grid.Row="0" Grid.Column="0" GroupName="Test" Content="Тест"/>
+                        <RadioButton Grid.Row="1" Grid.Column="0" GroupName="Test" Content="Тест"/>
+                        <RadioButton Grid.Row="0" Grid.Column="1" GroupName="Test1" Content="Тест" IsEnabled="False"/>
+                        <RadioButton Grid.Row="1" Grid.Column="1" GroupName="Test1" Content="Тест" IsEnabled="False" IsChecked="True"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="DataGrid">
+                <customControlLibrary:ExtendedDataGrid ItemsSource="{Binding Products}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Наименование" Binding="{Binding Title}"/>
+                        <DataGridComboBoxColumn Header="Ед. Хр." ItemsSource="{Binding UnitStorages}" SelectedValuePath="Id" SelectedValueBinding="{Binding IdUnitStorage}" DisplayMemberPath="Title"/>
+                    </DataGrid.Columns>
+                </customControlLibrary:ExtendedDataGrid>
+            </TabItem>
+            <TabItem Header="ComboBox">
+                <ComboBox ItemsSource="{Binding UnitStorages}" DisplayMemberPath="Title" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="120"/>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

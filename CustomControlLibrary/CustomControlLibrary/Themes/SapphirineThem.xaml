@@ -6,13 +6,14 @@
         <GradientStop Color="#FFC3DFE8" Offset="1"/>
     </LinearGradientBrush>
 
-    <!--<SolidColorBrush x:Key="Test" Color="#FFAAAAAA"></SolidColorBrush>-->
+    <!--<SolidColorBrush x:Key="Test" Color="#FFBCF0BC"></SolidColorBrush>-->
 
     <Color x:Key="DisabledControlColor">Gainsboro</Color>
     <Color x:Key="DisabledForegroundColor">#FF888888</Color>
 
     <Color x:Key="SelectedDataGridBackgroundColor">Blue</Color>
-    <Color x:Key="SelectedBackgroundColor">#DDFFDD</Color>
+    <Color x:Key="SelectedBackgroundColor">#FFBCF0BC</Color>
+    <Color x:Key="SelectedBackgroundColorLight">#DDFFDD</Color>
     <Color x:Key="SelectedUnfocusedColor">#FFDDDDDD</Color>
     <Color x:Key="SelectedControlColor">Green</Color>
 
