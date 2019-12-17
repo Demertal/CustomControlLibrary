@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=33E9B03A_002D9D54_002D40B2_002D9136_002D608C1596E04E_002Ff_003APasswordBehavior_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=BA906062_002D87B9_002D41E7_002DB1EE_002DA44007EB8933_002Ff_003AExtendedDataGrid_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=BA906062_002D87B9_002D41E7_002DB1EE_002DA44007EB8933_002Ff_003ARelayCommand_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=C2DDE6A6_002DE11C_002D4C3F_002D810D_002D07C8F559794E_002Ff_003AAssemblyInfo_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=C2DDE6A6_002DE11C_002D4C3F_002D810D_002D07C8F559794E_002Ff_003AMouseDoubleClickCommandBehavior_002Ecs/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=C2DDE6A6_002DE11C_002D4C3F_002D810D_002D07C8F559794E_002Ff_003APasswordBehavior_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=E7B99FA0_002DB9D7_002D4303_002DA82D_002D6EC350914618_002Ff_003AMainWindow_002Examl/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlNetLibrary\bin\Release\CustomControlNetLibrary.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

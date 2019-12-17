@@ -24,12 +24,6 @@ D:\Project\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\TestCustomControl.exe.config
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\TestCustomControl.exe
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\TestCustomControl.pdb
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\System.Windows.Interactivity.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.pdb
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.dll.config
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\System.Windows.Interactivity.xml
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.csprojAssemblyReference.cache
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\MainWindow.g.cs
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\App.g.cs
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\GeneratedInternalTypeHelper.g.cs
@@ -40,7 +34,11 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Relea
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.g.resources
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.Properties.Resources.resources
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.csproj.GenerateResource.cache
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.csproj.CoreCompileInputs.cache
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.csproj.CopyComplete
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.exe
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.pdb
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.csprojAssemblyReference.cache
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.dll
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\System.Windows.Interactivity.dll
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.pdb
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\System.Windows.Interactivity.xml

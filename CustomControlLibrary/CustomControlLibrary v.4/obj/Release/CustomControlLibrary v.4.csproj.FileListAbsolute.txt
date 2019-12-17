@@ -2,15 +2,6 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bi
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\CustomControlLibrary.pdb
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\System.Windows.Interactivity.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\System.Windows.Interactivity.xml
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\de\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\en\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\es\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\fr\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\it\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\ja\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\ko\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControlLibrary v.4.csprojAssemblyReference.cache
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\Themes\BaseStyles\ButtonStyle.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\Themes\BaseStyles\CheckBoxStyle.baml
@@ -36,7 +27,8 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\ob
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControl\Generic.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\Themes\Resourse.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControlLibrary.g.resources
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControlLibrary v.4.csproj.CoreCompileInputs.cache
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControlLibrary v.4.csproj.CopyComplete
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControlLibrary.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\obj\Release\CustomControlLibrary.pdb
+D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\Microsoft.Expression.Interactions.dll
+D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary v.4\bin\Release\Microsoft.Expression.Interactions.xml

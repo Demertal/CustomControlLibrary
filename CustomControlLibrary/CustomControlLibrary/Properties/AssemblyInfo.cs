@@ -1,22 +1,24 @@
 ﻿using System.Reflection;
+using System.Resources;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
 
 // Общие сведения об этой сборке предоставляются следующим набором
-// набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
-// связанные со сборкой.
-[assembly: AssemblyTitle("CustomControlLibrary")]
+// атрибутов. Отредактируйте значения этих атрибутов, чтобы изменить
+// связанные с этой сборкой.
+[assembly: AssemblyTitle("CustomControlNetLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("sibiryak-soft")]
-[assembly: AssemblyProduct("CustomControlLibrary")]
+[assembly: AssemblyProduct("CustomControlNetLibrary")]
 [assembly: AssemblyCopyright("Copyright © sibiryak-soft 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
-// для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
-// COM, задайте атрибуту ComVisible значение TRUE для этого типа.
+// Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
+// для компонентов COM. Если необходимо обратиться к типу в этой сборке через
+// компонента COM, задайте для атрибута ComVisible этого типа значение TRUE.
 [assembly: ComVisible(false)]
 
 //Чтобы начать создание локализуемых приложений, задайте
@@ -46,8 +48,8 @@ using System.Windows;
 //   Номер сборки
 //      Редакция
 //
-// Можно задать все значения или принять номер сборки и номер редакции по умолчанию.
+// Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
