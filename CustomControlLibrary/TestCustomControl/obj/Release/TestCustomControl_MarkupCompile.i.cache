@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Debug\
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\
 TestCustomControl
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\App.xaml
 11151548125
 
-8-1765363691
-15-473078872
+9-1284485942
+151722038694
 MainWindow.xaml;
 
-False
+True
 

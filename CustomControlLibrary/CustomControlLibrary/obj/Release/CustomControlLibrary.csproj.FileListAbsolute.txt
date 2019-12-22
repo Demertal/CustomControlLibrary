@@ -3,7 +3,6 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Re
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Release\Microsoft.Xaml.Behaviors.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Release\Microsoft.Xaml.Behaviors.pdb
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Release\Microsoft.Xaml.Behaviors.xml
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.csprojAssemblyReference.cache
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\Themes\BaseStyles\ButtonStyle.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\Themes\BaseStyles\CheckBoxStyle.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\Themes\BaseStyles\ComboBoxStyle.baml
@@ -33,3 +32,4 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Re
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.csproj.CopyComplete
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.pdb
+D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.csprojAssemblyReference.cache

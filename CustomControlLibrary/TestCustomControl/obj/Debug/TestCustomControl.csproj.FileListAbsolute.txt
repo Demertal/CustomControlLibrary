@@ -36,3 +36,5 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Debug
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Debug\CustomControlLibrary.pdb
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Debug\System.Windows.Interactivity.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Debug\System.Windows.Interactivity.xml
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Debug\Microsoft.Expression.Interactions.xml

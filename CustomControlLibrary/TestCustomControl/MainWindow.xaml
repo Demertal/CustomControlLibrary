@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:TestCustomControl"
         xmlns:customControlLibrary="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
         mc:Ignorable="d"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
         <local:MainWindowViewModel/>
@@ -44,6 +45,16 @@
             </TabItem>
             <TabItem Header="ComboBox">
                 <ComboBox ItemsSource="{Binding UnitStorages}" DisplayMemberPath="Title" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="120"/>
+            </TabItem>
+            <TabItem Header="PasswordBox">
+               <StackPanel Orientation="Vertical">
+                   <PasswordBox Width="75" VerticalAlignment="Top">
+                       <i:Interaction.Behaviors>
+                           <customControlLibrary:DependecyPropertyBehavior UpdateEvent="PasswordChanged" Property="Password" Binding="{Binding Text, ElementName=TestTextBox}"/>
+                       </i:Interaction.Behaviors>
+                   </PasswordBox>
+                    <TextBox x:Name="TestTextBox" Width="75" VerticalAlignment="Top"/>
+                </StackPanel>
             </TabItem>
         </TabControl>
     </Grid>
