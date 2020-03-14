@@ -40,7 +40,5 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Relea
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\System.Windows.Interactivity.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\CustomControlLibrary.pdb
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\System.Windows.Interactivity.xml
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\Microsoft.Expression.Interactions.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\bin\Release\Microsoft.Expression.Interactions.xml
-D:\Project\CustomControlLibrary\CustomControlLibrary\TestCustomControl\obj\Release\TestCustomControl.csprojAssemblyReference.cache

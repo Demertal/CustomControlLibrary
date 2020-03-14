@@ -5,6 +5,13 @@
         <ResourceDictionary Source="/CustomControlLibrary;component/Themes/BaseStyles/ControlStyle.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
+    <Style x:Key="TextBlockInCheckBox" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="MaxWidth" Value="{Binding MaxWidth, RelativeSource={RelativeSource TemplatedParent}}"/>
+    </Style>
+
     <Style x:Key="{x:Type CheckBox}" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource {x:Type Control}}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
@@ -12,7 +19,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type CheckBox}">
-                    <BulletDecorator Background="Transparent">
+                    <BulletDecorator Background="Transparent" VerticalAlignment="Center">
                         <BulletDecorator.Bullet>
                             <Border x:Name="Border" Width="16" Height="16" CornerRadius="8" BorderThickness="2">
                                 <Border.BorderBrush>
@@ -54,7 +61,22 @@
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
-                                <VisualState x:Name="Disabled" />
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                                      Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource DisabledControlColor}" />
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="InderminateMark"
+                                                                      Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource DisabledForegroundColor}" />
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="CheckMark"
+                                                                      Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource DisabledForegroundColor}" />
+                                        </ColorAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="CheckStates">
                                 <VisualState x:Name="Checked">
@@ -76,7 +98,11 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <ContentPresenter Margin="4,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" RecognizesAccessKey="True" />
+                        <ContentPresenter Margin="4,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" RecognizesAccessKey="True" MaxWidth="{Binding MaxWidth, RelativeSource={RelativeSource TemplatedParent}}">
+                            <ContentPresenter.Resources>
+                                <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource TextBlockInCheckBox}"/>
+                            </ContentPresenter.Resources>
+                        </ContentPresenter>
                     </BulletDecorator>
                 </ControlTemplate>
             </Setter.Value>

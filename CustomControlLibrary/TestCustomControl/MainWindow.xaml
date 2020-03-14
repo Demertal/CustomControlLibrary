@@ -44,17 +44,42 @@
                 </customControlLibrary:ExtendedDataGrid>
             </TabItem>
             <TabItem Header="ComboBox">
-                <ComboBox ItemsSource="{Binding UnitStorages}" DisplayMemberPath="Title" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="120"/>
+               <StackPanel Orientation="Horizontal">
+                   <ComboBox ItemsSource="{Binding UnitStorages}" DisplayMemberPath="Title" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="120"/>
+                    <ComboBox ItemsSource="{Binding UnitStorages}" DisplayMemberPath="Title" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="120" IsEditable="True"/>
+                </StackPanel>
             </TabItem>
-            <TabItem Header="PasswordBox">
+            <!--<TabItem Header="PasswordBox">
                <StackPanel Orientation="Vertical">
                    <PasswordBox Width="75" VerticalAlignment="Top">
                        <i:Interaction.Behaviors>
                            <customControlLibrary:DependecyPropertyBehavior UpdateEvent="PasswordChanged" Property="Password" Binding="{Binding Text, ElementName=TestTextBox}"/>
                        </i:Interaction.Behaviors>
                    </PasswordBox>
-                    <TextBox x:Name="TestTextBox" Width="75" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TestTextBox" Text="{Binding PasswordBoxText}" Width="75" VerticalAlignment="Top"/>
                 </StackPanel>
+            </TabItem>-->
+            <TabItem Header="CheckBox">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Grid.Row="0" Grid.Column="0" Content="Тест"/>
+                        <CheckBox Grid.Row="1" Grid.Column="0" Content="Тест"/>
+                        <CheckBox Grid.Row="0" Grid.Column="1" Content="Тест" IsEnabled="False"/>
+                        <CheckBox Grid.Row="1" Grid.Column="1" Content="Тест" IsEnabled="False" IsChecked="True"/>
+                    </Grid>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>

@@ -40,7 +40,6 @@ D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\De
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Debug\Microsoft.Xaml.Behaviors.dll
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\bin\Debug\Microsoft.Xaml.Behaviors.xml
-D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary.csprojAssemblyReference.cache
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Debug\Themes\BaseStyles\ButtonStyle.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Debug\Themes\BaseStyles\CheckBoxStyle.baml
 D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlLibrary\obj\Debug\Themes\BaseStyles\ComboBoxStyle.baml

@@ -60,6 +60,7 @@
     <Compile Include="ExtendedTreeView.cs" />
     <Compile Include="MouseDoubleClickCommandBehavior.cs" />
     <Compile Include="DependecyPropertyBehavior.cs" />
+    <Compile Include="PasswordBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelayCommand.cs" />
   </ItemGroup>

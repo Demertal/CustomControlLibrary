@@ -5,6 +5,8 @@ namespace TestCustomControl
 {
     public class MainWindowViewModel
     {
+        public string PasswordBoxText { get; set; } = "Тест";
+
         public ObservableCollection<UnitStorage> UnitStorages { get; set; } = new ObservableCollection<UnitStorage>
         {
             new UnitStorage {Id = 1, Title = "шт"},
