@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Threading;
 
-namespace CustomControlLibrary
+namespace CustomControlLibrary.ExtendedControl.DatePicker
 {
     public class DatePickerCalendar
     {
@@ -24,16 +24,16 @@ namespace CustomControlLibrary
 
         private static void OnIsMonthYearChanged(DependencyObject dobj, DependencyPropertyChangedEventArgs e)
         {
-            var datePicker = (DatePicker)dobj;
+            var datePicker = (System.Windows.Controls.DatePicker)dobj;
 
             if (Application.Current.Dispatcher != null)
                 Application.Current.Dispatcher
                     .BeginInvoke(DispatcherPriority.Loaded,
-                        new Action<DatePicker, DependencyPropertyChangedEventArgs>(SetCalendarEventHandlers),
+                        new Action<System.Windows.Controls.DatePicker, DependencyPropertyChangedEventArgs>(SetCalendarEventHandlers),
                         datePicker, e);
         }
 
-        private static void SetCalendarEventHandlers(DatePicker datePicker, DependencyPropertyChangedEventArgs e)
+        private static void SetCalendarEventHandlers(System.Windows.Controls.DatePicker datePicker, DependencyPropertyChangedEventArgs e)
         {
             if (e.NewValue == e.OldValue)
                 return;
@@ -60,7 +60,7 @@ namespace CustomControlLibrary
 
         private static void DatePickerOnCalendarClosed(object sender, RoutedEventArgs routedEventArgs)
         {
-            var datePicker = (DatePicker)sender;
+            var datePicker = (System.Windows.Controls.DatePicker)sender;
             var calendar = GetDatePickerCalendar(sender);
             datePicker.SelectedDate = calendar.SelectedDate;
 
@@ -81,16 +81,16 @@ namespace CustomControlLibrary
 
         private static Calendar GetDatePickerCalendar(object sender)
         {
-            var datePicker = (DatePicker)sender;
+            var datePicker = (System.Windows.Controls.DatePicker)sender;
             var popup = (Popup)datePicker.Template.FindName("PART_Popup", datePicker);
             return ((Calendar)popup.Child);
         }
 
-        private static DatePicker GetCalendarsDatePicker(FrameworkElement child)
+        private static System.Windows.Controls.DatePicker GetCalendarsDatePicker(FrameworkElement child)
         {
             var parent = (FrameworkElement)child.Parent;
             if (parent.Name == "PART_Root")
-                return (DatePicker)parent.TemplatedParent;
+                return (System.Windows.Controls.DatePicker)parent.TemplatedParent;
             return GetCalendarsDatePicker(parent);
         }
 

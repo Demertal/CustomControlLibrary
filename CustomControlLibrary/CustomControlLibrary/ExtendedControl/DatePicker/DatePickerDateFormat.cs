@@ -6,7 +6,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Threading;
 
-namespace CustomControlLibrary
+namespace CustomControlLibrary.ExtendedControl.DatePicker
 {
     public class DatePickerDateFormat
     {
@@ -26,19 +26,19 @@ namespace CustomControlLibrary
 
         private static void OnDateFormatChanged(DependencyObject dobj, DependencyPropertyChangedEventArgs e)
         {
-            var datePicker = (DatePicker)dobj;
+            var datePicker = (System.Windows.Controls.DatePicker)dobj;
 
             Application.Current.Dispatcher.BeginInvoke(
-                DispatcherPriority.Loaded, new Action<DatePicker>(ApplyDateFormat), datePicker);
+                DispatcherPriority.Loaded, new Action<System.Windows.Controls.DatePicker>(ApplyDateFormat), datePicker);
         }
 
-        private static void ApplyDateFormat(DatePicker datePicker)
+        private static void ApplyDateFormat(System.Windows.Controls.DatePicker datePicker)
         {
             var binding = new Binding("SelectedDate")
             {
-                RelativeSource = new RelativeSource { AncestorType = typeof(DatePicker) },
+                RelativeSource = new RelativeSource { AncestorType = typeof(System.Windows.Controls.DatePicker) },
                 Converter = new DatePickerDateTimeConverter(),
-                ConverterParameter = new Tuple<DatePicker, string>(datePicker, GetDateFormat(datePicker))
+                ConverterParameter = new Tuple<System.Windows.Controls.DatePicker, string>(datePicker, GetDateFormat(datePicker))
             };
             var textBox = GetTemplateTextBox(datePicker);
             textBox.SetBinding(TextBox.TextProperty, binding);
@@ -64,7 +64,7 @@ namespace CustomControlLibrary
             e.Handled = true;
 
             var textBox = (TextBox)sender;
-            var datePicker = (DatePicker)textBox.TemplatedParent;
+            var datePicker = (System.Windows.Controls.DatePicker)textBox.TemplatedParent;
             var dateStr = textBox.Text;
             var formatStr = GetDateFormat(datePicker);
             datePicker.SelectedDate = DatePickerDateTimeConverter.StringToDateTime(datePicker, formatStr, dateStr);
@@ -72,7 +72,7 @@ namespace CustomControlLibrary
 
         private static void DatePickerOnCalendarOpened(object sender, RoutedEventArgs e)
         {
-            var datePicker = (DatePicker)sender;
+            var datePicker = (System.Windows.Controls.DatePicker)sender;
             var textBox = GetTemplateTextBox(datePicker);
             var formatStr = GetDateFormat(datePicker);
             textBox.Text = DatePickerDateTimeConverter.DateTimeToString(formatStr, datePicker.SelectedDate);
@@ -82,14 +82,14 @@ namespace CustomControlLibrary
         {
             public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
             {
-                var formatStr = ((Tuple<DatePicker, string>)parameter)?.Item2;
+                var formatStr = ((Tuple<System.Windows.Controls.DatePicker, string>)parameter)?.Item2;
                 var selectedDate = (DateTime?)value;
                 return DateTimeToString(formatStr, selectedDate);
             }
 
             public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
             {
-                var tupleParam = ((Tuple<DatePicker, string>)parameter);
+                var tupleParam = ((Tuple<System.Windows.Controls.DatePicker, string>)parameter);
                 var dateStr = (string)value;
                 if (tupleParam != null) return StringToDateTime(tupleParam.Item1, tupleParam.Item2, dateStr);
                 return null;
@@ -100,7 +100,7 @@ namespace CustomControlLibrary
                 return selectedDate?.ToString(formatStr);
             }
 
-            public static DateTime? StringToDateTime(DatePicker datePicker, string formatStr, string dateStr)
+            public static DateTime? StringToDateTime(System.Windows.Controls.DatePicker datePicker, string formatStr, string dateStr)
             {
                 var canParse = DateTime.TryParseExact(dateStr, formatStr, CultureInfo.CurrentCulture,
                                                       DateTimeStyles.None, out var date);

@@ -4,6 +4,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/CustomControlLibrary;component/Themes/BaseStyles/ControlStyle.xaml"/>
         <ResourceDictionary Source="/CustomControlLibrary;component/Themes/BaseStyles/TextBlockStyle.xaml"/>
+        <ResourceDictionary Source="/CustomControlLibrary;component/Themes/BaseStyles/CheckBoxStyle.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <BooleanToVisibilityConverter x:Key="bool2VisibilityConverter" />
@@ -133,7 +134,7 @@
                         <ScrollViewer x:Name="DG_ScrollViewer" Focusable="false" Background="Black">
                             <ScrollViewer.Template>
                                 <ControlTemplate TargetType="{x:Type ScrollViewer}">
-                                    <Grid ClipToBounds="True" Margin="0,0,0,5">
+                                    <Grid ClipToBounds="True" Margin="0,0,0,5" IsSharedSizeScope="True">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
@@ -245,6 +246,7 @@
                                     <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                                     <Setter Property="TextWrapping" Value="NoWrap"/>
                                 </Style>
+                                <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}"/>
                             </ContentPresenter.Resources>
                         </ContentPresenter>
                     </Border>
@@ -484,7 +486,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type DataGridRowHeader}">
-                    <Grid>
+                    <Grid IsSharedSizeScope="True">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal" />
@@ -686,7 +688,7 @@
                 <ControlTemplate TargetType="{x:Type DataGridColumnHeadersPresenter}">
                     <Grid>
                         <DataGridColumnHeader x:Name="PART_FillerColumnHeader" IsHitTestVisible="False" />
-                        <ItemsPresenter />
+                        <ItemsPresenter/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

@@ -8,4 +8,5 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=E7B99FA0_002DB9D7_002D4303_002DA82D_002D6EC350914618_002Ff_003AMainWindow_002Examl/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="D:\Project\CustomControlLibrary\CustomControlLibrary\CustomControlNetLibrary\bin\Release\CustomControlNetLibrary.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

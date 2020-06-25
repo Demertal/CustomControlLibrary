@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestCustomControl"
         xmlns:customControlLibrary="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
+        xmlns:extendedControl="clr-namespace:CustomControlLibrary.ExtendedControl;assembly=CustomControlLibrary"
         mc:Ignorable="d"
-        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
         <local:MainWindowViewModel/>
@@ -36,12 +36,12 @@
                 </Grid>
             </TabItem>
             <TabItem Header="DataGrid">
-                <customControlLibrary:ExtendedDataGrid ItemsSource="{Binding Products}">
+                <extendedControl:ExtendedDataGrid ItemsSource="{Binding Products}">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Наименование" Binding="{Binding Title}"/>
                         <DataGridComboBoxColumn Header="Ед. Хр." ItemsSource="{Binding UnitStorages}" SelectedValuePath="Id" SelectedValueBinding="{Binding IdUnitStorage}" DisplayMemberPath="Title"/>
                     </DataGrid.Columns>
-                </customControlLibrary:ExtendedDataGrid>
+                </extendedControl:ExtendedDataGrid>
             </TabItem>
             <TabItem Header="ComboBox">
                <StackPanel Orientation="Horizontal">

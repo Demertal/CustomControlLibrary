@@ -36,8 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <SetTargetFramework>TargetFramework=net48</SetTargetFramework>
-      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.3\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,6 +54,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoubleUtil.cs" />
     <Page Include="CustomControl\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -139,10 +139,10 @@
     <Compile Include="Converters\CompareObjectConverter.cs" />
     <Compile Include="Converters\InverseBoolConverter.cs" />
     <Compile Include="CustomControl\WatermarkTextBox.cs" />
-    <Compile Include="DatePickerCalendar.cs" />
-    <Compile Include="DatePickerDateFormat.cs" />
-    <Compile Include="ExtendedDataGrid.cs" />
-    <Compile Include="ExtendedTreeView.cs" />
+    <Compile Include="ExtendedControl\DatePicker\DatePickerCalendar.cs" />
+    <Compile Include="ExtendedControl\DatePicker\DatePickerDateFormat.cs" />
+    <Compile Include="ExtendedControl\DataGrid\ExtendedDataGrid.cs" />
+    <Compile Include="ExtendedControl\ExtendedTreeView.cs" />
     <Compile Include="MouseDoubleClickCommandBehavior.cs" />
     <Compile Include="PasswordBehavior.cs" />
     <Compile Include="RelayCommand.cs" />

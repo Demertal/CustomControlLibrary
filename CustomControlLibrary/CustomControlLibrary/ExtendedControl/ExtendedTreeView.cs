@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace CustomControlLibrary
+namespace CustomControlLibrary.ExtendedControl
 {
     public class ExtendedTreeView : TreeView
     {
@@ -17,7 +17,8 @@ namespace CustomControlLibrary
             set => SetValue(SelectedItemProperty, value);
         }
 
-        public new static readonly DependencyProperty SelectedItemProperty = DependencyProperty.Register("SelectedItem", typeof(object), typeof(ExtendedTreeView), new UIPropertyMetadata(null));
+        public new static readonly DependencyProperty SelectedItemProperty = DependencyProperty.Register("SelectedItem",
+            typeof(object), typeof(ExtendedTreeView), new UIPropertyMetadata(null));
 
         #endregion
 

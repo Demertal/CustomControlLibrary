@@ -6,11 +6,12 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace CustomControlLibrary
+// ReSharper disable once CheckNamespace
+namespace CustomControlLibrary.ExtendedControl
 {
     public class ExtendedDataGrid: DataGrid
     {
-        public ExtendedDataGrid()
+       public ExtendedDataGrid()
         {
             CmHeaderCommand = new RelayCommand(idx =>
             {
